@@ -1,0 +1,304 @@
+/* Réinitialisation */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.cdnfonts.com/css/circe');
+@import url('https://fonts.cdnfonts.com/css/dancing-script');
+
+/* Couleur de fond */
+body {
+    background-color: #FFFAEF;
+    font-family: 'Circe', sans-serif;
+    height: 100%; /* Pour permettre le scroll */
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Logo */
+.logo-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+/* Taille et animation du logo */
+.logo {
+    width: 250px;
+    opacity: 0;
+    transform: scale(0.6);
+}
+
+/* Conteneur du texte */
+.text-container, .text3-container, .text6-container, .text8-container, .text9-container, .text10-container {
+    width: 80%;
+    max-width: 900px;
+    flex: 1;
+    font-size: 1rem; /* Taille réduite */
+    line-height: 1.5; /* Meilleure lisibilité */
+}
+
+/* Texte */
+.text, .text3, .text6, .text8, .text9, .text10 {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(50px);
+    text-align: justify;
+}
+
+.text2-container, .text4-container, .text7-container {
+    width: 80%;
+    max-width: 900px;
+    flex: 1;
+    font-size: 1rem; /* Taille réduite */
+    line-height: 1.5; /* Meilleure lisibilité */
+}
+
+/* Texte */
+.text2, .text4, .text7 {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(50px);
+    text-align: justify;
+    margin-left: 0;
+}
+
+.text5-container, .text11-container, .text12-container, .text13-container { 
+    margin-left: 7%;
+    margin-right: 7%;
+    flex: 1;
+    font-size: 1rem; /* Taille réduite */
+    line-height: 1.5; /* Meilleure lisibilité */
+    margin-left: 0; /* Application de la marge pour aligner à gauche avec 7% */
+}
+
+.text5, .text11, .text12, .text13 {
+    margin-left: 7%;
+    margin-right: 7%;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(50px);
+    text-align: justify; /* Justifier le texte pour garder un alignement propre */
+}
+
+/* Conteneur principal */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+    margin: 120vh auto 0 auto; /* Centre et espace avant affichage */
+    gap: 50px; /* Espacement entre le texte et l’image */
+}
+
+.image-container, .moodboard-container, .image2-container, .image3-container, .image4-container, .image5-container, .image7-container, .image8-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    opacity: 0; /* Image cachée au début */
+    transform: translateY(50px); /* Image déplacée en bas */
+    transition: opacity 1.2s ease, transform 1.2s ease; /* Transition fluide */
+}
+.mockup {
+    width: 40em;
+    height: 22em;
+    max-width: 400px;
+}
+
+.moodboard {
+    width: 40em;
+    height: 25em;
+    max-width: 400px;
+}
+
+.messageclé {
+    width: 50em;
+    height: 20em;
+    max-width: 400px;
+}
+
+.couleurs {
+    width: 100em;
+    height: 16em;
+    max-width: 400px;
+}
+
+.circe {
+    width: 50em;
+    height: 22em;
+    max-width: 400px;
+}
+
+.dancing_script {
+    width: 50em;
+    height: 22em;
+    max-width: 400px;
+}
+
+.picto {
+    width: 17em;
+    height: 15em;
+    max-width: 400px;
+}
+
+.motif {
+    width: 40em;
+    height: 15em;
+    max-width: 400px;
+}
+
+
+.paragraph, .paragraph2 {
+    margin-left: 7%;
+    margin-right: 7%;
+    display: flex;
+    flex-direction: row;
+}
+
+.paragraph2 {
+    align-items: center;
+}
+
+
+.title-container, .title2-container, .title3-container, .title4-container, .title5-container, .title9-container, .title13-container, .title14-container {
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 2%;
+    width: 100%;
+    flex: 1;
+    font-size: 1.2em;  /* Taille du texte plus grande que 1em */
+}
+
+/* Titre */
+.title, .title2, .title3, .title4, .title5, .title9, .title13, .title14 {
+    margin-left: 7%;
+    margin-right: 7%;
+    font-size: 2rem;    /* Taille agrandie */
+    font-weight: bold;  /* Texte en gras */
+    line-height: 1.6;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.title6-container, .title7-container, .title8-container, .title10-container, .title11-container, .title12-container, .title15-container, .title16-container, .title17-container {
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 2%;
+    width: 100%;
+    flex: 1;
+    font-size: 1.2em;  /* Taille du texte plus grande que 1em */
+}
+
+.title6, .title7, .title8, .title10, .title11, .title12, .title15, .title16, .title17 {
+    margin-left: 7%;
+    margin-right: 7%;
+    font-size: 2rem;    /* Taille agrandie */
+    font-weight: bold;  /* Texte en gras */
+    line-height: 1.6;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(50px);
+    font-family: 'Dancing Script', cursive; /* Application de la police Dancing Script */
+    color: #88673D; /* Couleur #88673D */
+}
+
+.photos {
+    width: 50em;
+    height: 22em;
+    display: block; /* On change de flex à block pour éviter la disposition en ligne */
+}
+
+.flyer {
+    width: 50em;
+    height: 22em;
+    display: block; 
+}
+
+.packaging {
+    width: 60em;
+    height: 22em;
+    display: block;
+}
+
+.tableau {
+    width: 35em;
+    height: 22em;
+    display: block;
+}
+
+.michalak {
+    width: 25em;
+    height: 20em;
+    display: block;
+    border-radius: 3px; /* Coins arrondis de 19px */
+    border: 2px solid #AF8932;
+}
+
+.gastronhoming {
+    width: 30em;
+    height: 20em;
+    display: block;
+    border-radius: 3px; /* Coins arrondis de 19px */
+    border: 2px solid #AF8932;
+}
+
+.boco {
+    width: 30em;
+    height: 20em;
+    display: block;
+    border-radius: 3px; /* Coins arrondis de 19px */
+    border: 2px solid #AF8932;
+}
+
+.image6-container, .image9-container, .image10-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    opacity: 1; /* Image visible */
+    transform: translateY(0); /* Retire la translation si nécessaire */
+    transition: opacity 1.2s ease, transform 1.2s ease; /* Transition fluide */
+    margin-top: 20px; /* Espacement entre le texte et l'image */
+    background-color: #AF8932; /* La couleur de fond du carré */
+    border-radius: 3px; /* Coins arrondis de 19px */
+    padding: 2px; /* Espacement autour de la vidéo */
+    display: inline-block; /* Pour que la taille du conteneur corresponde à la vidéo */
+    box-sizing: border-box; 
+}
+
+.image11-container, .image12-container, .image13-container, .image14-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    opacity: 1; /* Image visible */
+    transform: translateY(0); /* Retire la translation si nécessaire */
+    transition: opacity 1.2s ease, transform 1.2s ease; /* Transition fluide */
+    margin-top: 20px; /* Espacement entre le texte et l'image */
+}
+
+.video-container {
+    width: 100%;
+    max-width: 800px; /* Limite la largeur maximale */
+    height: auto; /* Ajuste la hauteur proportionnellement */
+    margin: 0 auto; /* Centre la vidéo */
+    display: block;
+    background-color: #AF8932; /* La couleur de fond du carré */
+    border-radius: 19px; /* Coins arrondis de 19px */
+    padding: 2px; /* Espacement autour de la vidéo */
+    display: inline-block; /* Pour que la taille du conteneur corresponde à la vidéo */
+    box-sizing: border-box; /* Prendre en compte le padding dans la taille totale */
+}
